@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urlaubs-Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌍 Mein Urlaubs-Tracker</h1>
+
+  <section id="trip-form">
+    <h2>✈️ Neue Reise anlegen</h2>
+    <form id="addTripForm">
+      <input type="text" id="tripName" placeholder="Reisename (z. B. Österreich 2025)" required />
+      <button type="submit">Reise speichern</button>
+    </form>
+  </section>
+
+  <section id="trip-list">
+  <h2>🗺️ Meine Reisen</h2>
+  <ul id="trips"></ul>
+</section>
+
+<section id="place-section" style="display: none;">
+  <h2 id="selected-trip-name">📌 Orte für: </h2>
+  <form id="addPlaceForm">
+    <input type="text" id="placeName" placeholder="Ort (z. B. Nürnberg)" required />
+    <input type="text" id="placeTopic" placeholder="Thema (z. B. Geschichte)" />
+    <input type="url" id="placeLink" placeholder="Google Maps Link" />
+    <button type="submit">Ort speichern</button>
+  </form>
+  <ul id="places"></ul>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
